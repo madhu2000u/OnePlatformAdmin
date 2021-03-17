@@ -12,4 +12,4 @@
 /captures
 .externalNativeBuild
 .cxx
-./app/src/main/java/com/madhu/oneplatformadmin/Secrets.java
+/app/src/main/java/com/madhu/oneplatformadmin/Secrets.java
