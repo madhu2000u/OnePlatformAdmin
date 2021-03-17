@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="4dp"
+    android:elevation="20dp"
+    android:padding="7dp">
+
+    <LinearLayout
+        android:layout_weight="1.25"
+        android:id="@+id/attendance_rv_item_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="5dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            style="@style/TextAppearance.AppCompat.Button"
+            android:text="CLPC12"
+
+            android:textSize="29sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear">
+
+            <Spinner
+                android:id="@+id/classes_spinner"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mark for:"
+                android:textColor="@android:color/black"
+                android:layout_marginEnd="5dp"
+                android:layout_alignLeft="@+id/date_text"/>
+
+            <TextView
+                android:id="@+id/date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21 Jan 2021"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@+id/date"
+                android:layout_centerVertical="true"/>
+
+            <ImageButton
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_access_time_24"
+                android:layout_centerVertical="true"
+                style="@style/Widget.AppCompat.ActionButton"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <Button
+                android:id="@+id/mark_class_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            style="@style/Widget.AppCompat.ActionButton"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
+            android:textColor="#0085FF"
+
+            android:text="Mark class"/>
+
+            <Button
+                android:id="@+id/mark_rec_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
+                android:textColor="@android:color/white"
+
+                android:text="Mark rec"/>
+
+<!--                style="@style/Widget.AppCompat.ActionButton"-->
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_weight="1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginHorizontal="10dp"-->
+<!--        android:layout_marginVertical="5dp"-->
+<!--        android:backgroundTint="#E6E6E6"-->
+<!--        >-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginVertical="5dp"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/att_curr_percentage_tv"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                -->
+<!--                android:text="87%"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textAlignment="center"-->
+<!--                -->
+<!--                android:textSize="45sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/att_classes_tv"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                -->
+<!--                android:text="30/36"-->
+<!--                android:textAlignment="center"-->
+<!--                -->
+<!--                android:textSize="20sp" />-->
+
+<!--            <LinearLayout-->
+<!--                android:gravity="center"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <Button-->
+<!--                    android:layout_marginHorizontal="4dp"-->
+<!--                    android:id="@+id/att_mark_present_imgv"-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                     />-->
+
+<!--                <Button-->
+<!--                    android:layout_marginHorizontal="4dp"-->
+<!--                    android:id="@+id/att_mark_noclass_imgv"-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    />-->
+
+<!--                <Button-->
+<!--                    android:layout_marginHorizontal="4dp"-->
+<!--                    android:id="@+id/att_mark_absent_imgv"-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    />-->
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
+</androidx.cardview.widget.CardView>
